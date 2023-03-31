@@ -8,7 +8,7 @@ import java.util.TimerTask;
 public class AudioController {
 
     public static void main(String[] args) throws IOException {
-        JFrame frame = new JFrame("Audio Domain Visualiser");
+        JFrame frame = new JFrame("Audio Visualiser");
         Wav wav = new Wav();
         FFTPanel fftController = new FFTPanel("FFT", wav.numberOfSamples, wav.sampleRate, wav.leftChannelSamples);
         WaveformPanel leftChannelController = new WaveformPanel("Left Channel", wav.numberOfSamples, wav.sampleRate, wav.leftChannelSamples);
